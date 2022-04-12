@@ -1,0 +1,32 @@
+/*introduce two numbers */
+#include <stdio.h>
+
+void main()
+{
+int a, b, g; 
+printf("please enter any two number \n ");
+    scanf ("%d,%d",&a, &b);
+g=a*b;
+printf ("the product of two numbers%d",g); 
+
+return  0;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
