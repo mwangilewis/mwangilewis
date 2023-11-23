@@ -1,10 +1,51 @@
-- 👋 Hi, I’m @mwangilewis
-- 👀 I’m interested in ...
-- 🌱 I’m currently learning ...
-- 💞️ I’m looking to collaborate on ...
-- 📫 How to reach me ...
+Group members:
+HB107/G/14777/21 MUSILA JOY NEEMA
+HB107/G/14757/21 LEWIS MWANGI GICHUA
+HB107/G/ 14729/21 OLIVER KIPROTICH MUTAI
+HB107/G/15366/21 STEPHEN MUIGA WAKABA
+HB107/G/15430/21 HAROLD KHAMALA
+HB107/G/12158/20 WANJIKU SAMUEL CHEGE
 
-<!---
-mwangilewis/mwangilewis is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+The matlab code is: 
+% Constants (as previously defined)
+initial_velocity = 390;  % m/s
+launch_angle = 40;      % degrees
+caliber = 0.009;        % m
+mass_of_gun = 4;        % kg
+distance = 91;          % m
+g = 9.81;               % m/s^2 (acceleration due to gravity)
+ 
+% Convert launch angle to radians
+launch_angle = deg2rad(launch_angle);
+ 
+% Calculate time of flight
+time_of_flight = (2 * initial_velocity * sin(launch_angle)) / g;
+ 
+% Time vector
+t = linspace(0, time_of_flight, 1000);
+ 
+% Calculate x and y coordinates of the trajectory
+x = initial_velocity * cos(launch_angle) * t;
+y = initial_velocity * sin(launch_angle) * t - 0.5 * g * t.^2;
+ 
+% Calculate velocity as a function of time
+v = initial_velocity - g * t;
+ 
+% Create a figure
+figure;
+ 
+% Plot velocity against time
+subplot(2, 1, 1);
+plot(t, v);
+xlabel('Time (s)');
+ylabel('Velocity (m/s)');
+title('Bullet Velocity vs. Time');
+grid on;
+ 
+% Plot the trajectory
+subplot(2, 1, 2);
+plot(x, y);
+xlabel('Horizontal Distance (m)');
+ylabel('Vertical Distance (m)');
+title('Bullet Trajectory');
+grid on;
