@@ -1,12 +1,4 @@
-Group members:
-HB107/G/14777/21 MUSILA JOY NEEMA
-HB107/G/14757/21 LEWIS MWANGI GICHUA
-HB107/G/ 14729/21 OLIVER KIPROTICH MUTAI
-HB107/G/15366/21 STEPHEN MUIGA WAKABA
-HB107/G/15430/21 HAROLD KHAMALA
-HB107/G/12158/20 WANJIKU SAMUEL CHEGE
 
-The matlab code is: 
 % Constants (as previously defined)
 initial_velocity = 390;  % m/s
 launch_angle = 40;      % degrees
